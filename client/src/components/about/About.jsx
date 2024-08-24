@@ -14,11 +14,14 @@ const Wrapper = styled(Box)`
     padding: 20px;
     & > h3, & > h5 {
         margin-top: 50px;
+        ${'' /* color: blue; */}
     }
 `;
 
 const Text = styled(Typography)`
-    color: #878787;
+    ${'' /* color: #878787; */}
+    color: sky-blue;
+    font-weight: bold;
 `;
 
 const About = () => {
@@ -27,7 +30,7 @@ const About = () => {
         <Box>
             <Banner/>
             <Wrapper>
-                <Typography variant="h3">Code for Interview</Typography>
+                <Typography variant="h3">MUBASHIR</Typography>
                 <Text variant="h5">I'm a Software Engineer based in Kashmir, India. 
                     I've built websites, desktop applications and corporate software.<br />
                     I'm passionate about coding, learning and sharing knowledge with others.<br/>
