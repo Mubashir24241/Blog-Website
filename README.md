@@ -53,20 +53,25 @@ To get started with the project, follow these steps to clone and set it up local
    ```bash
    git clone https://github.com/Mubashir24241/Blog-Website.git
    cd Blog-Website
-Install dependencies for both frontend and backend:
+   
+**Install dependencies for both frontend and backend:**
 
-For Frontend (Next.js):
+ For Frontend (Next.js):
 
-Navigate to the client directory and run:
+ Navigate to the client directory and run:
 
+```bash
 cd client
 npm install
+
 For Backend (Node.js + Express):
 
 Navigate to the backend directory and run:
 
+```bash
 cd backend
 npm install
+
 Set up environment variables:
 
 In the backend directory, create a .env file and add the following variables:
