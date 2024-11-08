@@ -44,21 +44,47 @@ This project is a blog management system designed for an admin to manage blog po
 - Image upload functionality with third-party services like Cloudinary.
 - Pagination for blog post listing.
 
-## Database Schema
+### Clone the Repository
 
-**Blogs Table**
+To get started with the project, follow these steps to clone and set it up locally:
 
-```sql
-CREATE TABLE blogs (
-  id INT AUTO_INCREMENT PRIMARY KEY,
-  title VARCHAR(255) NOT NULL,
-  content TEXT NOT NULL,
-  image_url VARCHAR(255),
-  video_url VARCHAR(255),
-  meta_title VARCHAR(255),
-  meta_description TEXT,
-  tags VARCHAR(255),
-  status ENUM('published', 'draft') DEFAULT 'draft',
-  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-  updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
-);
+1. **Clone the repository**:
+
+   ```bash
+   git clone https://github.com/Mubashir24241/Blog-Website.git
+   cd Blog-Website
+Install dependencies for both frontend and backend:
+
+For Frontend (Next.js):
+
+Navigate to the client directory and run:
+
+cd client
+npm install
+For Backend (Node.js + Express):
+
+Navigate to the backend directory and run:
+
+cd backend
+npm install
+Set up environment variables:
+
+In the backend directory, create a .env file and add the following variables:
+
+env
+Copy code
+DB_URI=mongodb://localhost:27017/blog-dashboard
+JWT_SECRET=your_jwt_secret_key
+Replace your_jwt_secret_key with your own JWT secret key for authentication.
+
+In the client directory, create a .env.local file and add:
+
+env
+Copy code
+NEXT_PUBLIC_API_URL=http://localhost:4000/api
+Running the Project Locally
+Start the Backend:
+
+
+Open your browser and go to http://localhost:3000 to access the admin dashboard.
+
