@@ -26,6 +26,8 @@ export const singupUser = async (request, response) => {
 
 
 export const loginUser = async (request, response) => {
+
+    console.log('Login Request Body:', request.body);
     let user = await User.findOne({ username: request.body.username });
     if (!user) {
         return response.status(400).json({ msg: 'Username does not match' });
