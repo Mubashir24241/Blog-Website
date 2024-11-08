@@ -1,1 +1,26 @@
+# Ignore environment files
 .env
+.env.local
+.env.development
+.env.production
+
+# Ignore sensitive config files
+config/*.json
+config/*.yml
+config/*.yaml
+
+# Ignore any backup files
+*.bak
+*.old
+
+# Ignore log files
+*.log
+
+# Ignore node modules and other dependencies (for Node.js projects)
+node_modules/
+
+# Ignore build and temporary files
+dist/
+build/
+tmp/
+*.tmp
