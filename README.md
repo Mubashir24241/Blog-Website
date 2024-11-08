@@ -1,27 +1,27 @@
-# Blog Admin Dashboard with Next.js, Tailwind CSS, Node.js, and SQL
+# Blog Dashboard with Next.js, Tailwind CSS, Node.js, and MongoDB
 
-This project is a blog management system designed for an admin to manage blog posts. The system allows admins to create, edit, and delete blog posts. Each post includes images, videos, SEO metadata, and a publish status (published/draft). The blog posts are then displayed on the frontend, with SEO optimization.
+This project is a blog management system designed for an admin to manage blog posts. The system allows admins to create, edit, and delete blog posts. Each post includes images, SEO metadata, and a publish status (published/draft). The blog posts are then displayed on the frontend, with SEO optimization.
 
 ## Tech Stack
 
 - **Frontend**: Next.js, Tailwind CSS
 - **Backend**: Node.js, Express.js
-- **Database**: SQL (MySQL, PostgreSQL, or SQLite)
+- **Database**: SQL (MongoDB)
 
 ## Features
 
 ### Admin Dashboard
 
 - **Create New Blog Post**:
-  - Add a title, content, images, videos, SEO fields (Meta title, meta description, tags).
+  - Add a title, content, images, SEO fields (Meta title, meta description, tags).
   - Set the post status (published or draft).
 
 - **Edit Blog Post**:
-  - Edit all fields (title, content, images, videos, SEO metadata).
+  - Edit all fields (title, content, images, SEO metadata).
   - Update post status.
 
 - **Delete Blog Post**:
-  - Remove posts from the system.
+  - Remove/Delete posts from the system.
 
 - **Post List**:
   - View all posts with titles, status (published/draft), and creation date.
@@ -29,9 +29,9 @@ This project is a blog management system designed for an admin to manage blog po
 
 ### Blog Display Page
 
-- Display individual blog posts with content, images, and videos.
+- Display individual blog posts with content, images.
 - Apply SEO metadata (meta title, description) in the `<head>` section using Next.js `<Head>`.
-- Optional: Display related posts or tags.
+- Optional: You can display related posts or tags.
 
 ### Responsiveness
 
