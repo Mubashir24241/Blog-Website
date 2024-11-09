@@ -1,12 +1,13 @@
 {
   "name": "server",
   "version": "1.0.0",
+  "engines": {"node": "20.x"},
   "description": "",
   "main": "index.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon index.js"
+    "start": "node index.js"
   },
   "author": "",
   "license": "ISC",
