@@ -1,15 +1,16 @@
 import mongoose from 'mongoose';
-import dotenv from 'dotenv';
-
-dotenv.config();
 
 const Connection = async () => {
-    const URL = `mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@project2.h8ibr.mongodb.net/?retryWrites=true&w=majority&appName=project2`;
+    const username = "mubashirahmadcse2";
+    const password = "YuVhDvnAZxUu5VsS";
+    const URL = `mongodb+srv://${username}:${password}@project2.h8ibr.mongodb.net/?retryWrites=true&w=majority&appName=project2`;
+
     try {
+        console.log("Attempting to connect to MongoDB...");
         await mongoose.connect(URL, { useNewUrlParser: true, useUnifiedTopology: true });
-        console.log('Database connected successfully');
+        console.log("Database connected successfully");
     } catch (error) {
-        console.log('Error while connecting to the database', error);
+        console.log("Error while connecting to the database:", error.message);
     }
 };
 
